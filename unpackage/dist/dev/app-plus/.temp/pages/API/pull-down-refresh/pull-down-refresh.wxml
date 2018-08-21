@@ -1,0 +1,1 @@
+<import src="../../../components/pull-down-refresh$701360f2" /><template is="pull-down-refresh$701360f2" data="{{ ...$root['0'], $root }}"/>

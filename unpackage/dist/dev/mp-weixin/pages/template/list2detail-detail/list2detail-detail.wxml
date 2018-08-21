@@ -1,0 +1,1 @@
+<import src="../../../components/list2detail-detail$67c0ed36" /><template is="list2detail-detail$67c0ed36" data="{{ ...$root['0'], $root }}"/>

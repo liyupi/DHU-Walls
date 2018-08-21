@@ -1,0 +1,42 @@
+<import src="page-head$b57f9d48" />
+<template name="accordion$50c16ea4">
+  <view class="_view data-v-1516ab7e page">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-1516ab7e uni-card">
+      <view class="_view data-v-1516ab7e uni-list">
+        <block wx:key="index" key="{{index}}" wx:for="{{lists}}" wx:for-index="index" wx:for-item="list">
+          <view class="_view data-v-1516ab7e uni-list-cell uni-collapse">
+            <view class="_view data-v-1516ab7e uni-list-cell-navigate uni-navigate-bottom {{list.show ? 'uni-active' : ''}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}"> {{list.title}} </view>
+            <view class="_view data-v-1516ab7e uni-collapse-content {{list.show ? 'uni-active' : ''}}">
+              <swiper wx:if="{{list.type === 'swiper'}}" autoplay="true" indicator-dots="true" circular="true" style="height: 400rpx;" class="_swiper data-v-1516ab7e">
+                <swiper-item wx:key="key" key="{{key}}" wx:for="{{imgUrls}}" wx:for-index="key" wx:for-item="img" class="_swiper-item data-v-1516ab7e">
+                  <image src="{{img}}" style="height: 400rpx;" class="_image data-v-1516ab7e"></image>
+                </swiper-item>
+              </swiper>
+              <view wx:if="{{list.type === 'font'}}" class="_view data-v-1516ab7e page-pd">
+                <view class="_view data-v-1516ab7e size-5">hello uni-app</view>
+                <view class="_view data-v-1516ab7e size-4">hello uni-app</view>
+                <view class="_view data-v-1516ab7e size-3">hello uni-app</view>
+                <view class="_view data-v-1516ab7e size-2">hello uni-app</view>
+                <view class="_view data-v-1516ab7e size-1">hello uni-app</view>
+              </view>
+              <view wx:if="{{list.type === 'list'}}" class="_view data-v-1516ab7e">
+                <view class="_view data-v-1516ab7e uni-list">
+                  <view class="_view data-v-1516ab7e uni-list-cell" hover-class="uni-list-cell-hover">
+                    <view class="_view data-v-1516ab7e uni-list-cell-navigate uni-navigate-right">hello uni-app</view>
+                  </view>
+                  <view class="_view data-v-1516ab7e uni-list-cell" hover-class="uni-list-cell-hover">
+                    <view class="_view data-v-1516ab7e uni-list-cell-navigate uni-navigate-right">hello uni-app</view>
+                  </view>
+                  <view class="_view data-v-1516ab7e uni-list-cell" hover-class="uni-list-cell-hover">
+                    <view class="_view data-v-1516ab7e uni-list-cell-navigate uni-navigate-right">hello uni-app</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,1 @@
+<import src="../../../components/swiper$655ae791" /><template is="swiper$655ae791" data="{{ ...$root['0'], $root }}"/>

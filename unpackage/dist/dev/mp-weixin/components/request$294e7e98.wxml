@@ -1,0 +1,14 @@
+<import src="page-head$b57f9d48" />
+<template name="request$294e7e98">
+  <view class="_view data-v-0189cc75">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-0189cc75 page-body">
+      <view class="_view data-v-0189cc75 page-body-wording">
+        <text class="_text data-v-0189cc75 page-body-text"> 点击向服务器发起请求 </text>
+      </view>
+      <view class="_view data-v-0189cc75 btn-area">
+        <button type="primary" bindtap="handleProxy" loading="{{loading}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-0189cc75">request</button>
+      </view>
+    </view>
+  </view>
+</template>

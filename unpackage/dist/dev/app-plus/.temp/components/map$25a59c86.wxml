@@ -1,0 +1,11 @@
+<import src="page-head$c4dafa20" />
+<template name="map$25a59c86">
+  <view class="_view data-v-4dbee6be">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-4dbee6be page-body">
+      <view class="_view data-v-4dbee6be page-section page-section-gap">
+        <map latitude="{{latitude}}" longitude="{{longitude}}" markers="{{covers}}" class="_map data-v-4dbee6be"></map>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,24 @@
+<import src="page-head$c4dafa20" />
+<template name="get-network-type$2e76fd3a">
+  <view class="_view data-v-7cf403fe">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-7cf403fe page-body">
+      <view class="_view data-v-7cf403fe page-section">
+        <view class="_view data-v-7cf403fe page-body-info">
+          <view class="_view data-v-7cf403fe page-body-title">网络状态</view>
+          <block wx:if="{{hasNetworkType === false}}">
+            <text class="_text data-v-7cf403fe page-body-text">未获取</text>
+            <text class="_text data-v-7cf403fe page-body-text">点击绿色按钮可获取网络状态</text>
+          </block>
+          <block wx:if="{{hasNetworkType === true}}">
+            <text class="_text data-v-7cf403fe page-body-text-network-type">{{networkType}}</text>
+          </block>
+        </view>
+        <view class="_view data-v-7cf403fe btn-area">
+          <button type="primary" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-7cf403fe">获取手机网络状态</button>
+          <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-7cf403fe">清空</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

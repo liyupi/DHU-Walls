@@ -1,0 +1,17 @@
+<import src="page-head$c4dafa20" />
+<template name="request-payment$28dc2e12">
+  <view class="_view data-v-76f334d3">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-76f334d3 page-body">
+      <view class="_view data-v-76f334d3 page-section">
+        <view class="_view data-v-76f334d3">支付金额</view>
+        <view class="_view data-v-76f334d3 price">
+          <text class="_text data-v-76f334d3 rmbLogo">￥</text>0.01</view>
+        <view class="_view data-v-76f334d3 desc">实际应用中可自定义金额</view>
+        <view class="_view data-v-76f334d3 btn-area">
+          <button type="primary" disabled="true" class="_button data-v-76f334d3">微信支付</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

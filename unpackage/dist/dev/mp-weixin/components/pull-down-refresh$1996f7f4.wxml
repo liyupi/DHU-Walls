@@ -1,0 +1,17 @@
+<import src="page-head$b57f9d48" />
+<template name="pull-down-refresh$1996f7f4">
+  <view class="_view data-v-63bc9187">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-63bc9187 page-body">
+      <view class="_view data-v-63bc9187 page-section">
+        <view class="_view data-v-63bc9187 page-body-info">
+          <text class="_text data-v-63bc9187 page-body-text">下拉页面加载数据</text>
+        </view>
+        <view class="_view data-v-63bc9187 page-body-content">
+          <view class="_view data-v-63bc9187 text" wx:key="index" key="{{index}}" wx:for="{{data}}" wx:for-index="index" wx:for-item="num">list - {{num}}</view>
+          <view class="_view data-v-63bc9187 loadMore" wx:if="{{showLoadMore}}">{{loadMoreText}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

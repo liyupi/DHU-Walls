@@ -1,0 +1,1 @@
+<import src="../../../components/on-compass-change$6b8af348" /><template is="on-compass-change$6b8af348" data="{{ ...$root['0'], $root }}"/>

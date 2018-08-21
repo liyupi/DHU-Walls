@@ -1,0 +1,16 @@
+<import src="page-head$b57f9d48" />
+<template name="canvas$1d40b764">
+  <view class="_view data-v-34e822d5">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-34e822d5 page-body">
+      <view class="_view data-v-34e822d5 page-section">
+        <canvas class="_canvas data-v-34e822d5 canvas-element" canvas-id="canvas"></canvas>
+        <scroll-view class="_scroll-view data-v-34e822d5 canvas-buttons" scroll-y="true">
+          <block wx:key="index" key="{{index}}" wx:for="{{names}}" wx:for-index="index" wx:for-item="name">
+            <button class="_button data-v-34e822d5 canvas-button" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">{{name}}</button>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</template>

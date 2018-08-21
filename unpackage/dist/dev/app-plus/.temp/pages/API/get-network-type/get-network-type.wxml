@@ -1,0 +1,1 @@
+<import src="../../../components/get-network-type$2e76fd3a" /><template is="get-network-type$2e76fd3a" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,11 @@
+<template name="product$0f4bbe26">
+  <view class="_view data-v-1316d1c0 product">
+    <image class="_image data-v-1316d1c0 product-image" src="{{image ? image : 'http://via.placeholder.com/150x200'}}"></image>
+    <view class="_view data-v-1316d1c0 product-title">{{title}}</view>
+    <view class="_view data-v-1316d1c0 product-price">
+      <text class="_text data-v-1316d1c0 product-price-favour">￥{{originalPrice}}</text>
+      <text class="_text data-v-1316d1c0 product-price-original">￥{{favourPrice}}</text>
+      <text class="_text data-v-1316d1c0 product-tip">{{tip}}</text>
+    </view>
+  </view>
+</template>

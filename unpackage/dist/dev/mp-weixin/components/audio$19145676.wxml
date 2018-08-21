@@ -1,0 +1,11 @@
+<import src="page-head$b57f9d48" />
+<template name="audio$19145676">
+  <view class="_view data-v-03845086">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-03845086 page-body">
+      <view class="_view data-v-03845086 page-section page-section-gap" style="text-align: center;">
+        <audio style="text-align: left" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" action="{{audioAction}}" controls class="_audio data-v-03845086"></audio>
+      </view>
+    </view>
+  </view>
+</template>

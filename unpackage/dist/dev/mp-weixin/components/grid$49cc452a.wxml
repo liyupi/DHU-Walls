@@ -1,0 +1,12 @@
+<import src="page-head$c4dafa20" />
+<template name="grid$49cc452a">
+  <view class="_view data-v-347ce403 page">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-347ce403 uni-grid-9">
+      <view class="_view data-v-347ce403 uni-grid-9-item {{index % 3 === 2 ? 'no-border-right' : ''}}" hover-class="uni-grid-9-item-hover" wx:key="index" key="{{index}}" wx:for="{{date}}" wx:for-index="index" wx:for-item="item">
+        <image class="_image data-v-347ce403 uni-grid-9-image" src="{{item}}"></image>
+        <text class="_text data-v-347ce403 uni-grid-9-text">grid</text>
+      </view>
+    </view>
+  </view>
+</template>

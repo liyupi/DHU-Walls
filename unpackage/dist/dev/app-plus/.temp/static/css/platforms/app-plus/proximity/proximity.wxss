@@ -1,0 +1,11 @@
+@import "/static/css/vendor.wxss";
+
+._textarea {
+  border: 2rpx solid #7A7E83;
+  height: 288rpx;
+}
+.page-body-desc {
+  font-size: 32rpx;
+  color: #BEBEBE;
+  padding: 30rpx;
+}

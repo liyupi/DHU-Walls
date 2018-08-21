@@ -1,0 +1,5 @@
+<template name="web-view$9ba9a486">
+  <view class="_view data-v-395ff044">
+    <web-view src="https://uniapp.dcloud.io" class="_web-view data-v-395ff044"></web-view>
+  </view>
+</template>

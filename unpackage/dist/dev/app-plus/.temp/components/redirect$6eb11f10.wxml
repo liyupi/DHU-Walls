@@ -1,0 +1,6 @@
+<import src="page-head$c4dafa20" />
+<template name="redirect$6eb11f10">
+  <view class="_view data-v-2b19f40c">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+  </view>
+</template>

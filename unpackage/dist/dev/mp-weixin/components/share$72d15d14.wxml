@@ -1,0 +1,24 @@
+<import src="page-head$b57f9d48" />
+<template name="share$72d15d14">
+  <view class="_view data-v-38c47215">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-38c47215 page-body">
+      <view class="_view data-v-38c47215 page-section-title">分享内容</view>
+      <view class="_view data-v-38c47215 page-section">
+        <view class="_view data-v-38c47215 textarea-wrp">
+          <textarea class="_textarea data-v-38c47215 textarea" value="{{shareText}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        </view>
+      </view>
+      <view class="_view data-v-38c47215 page-section-title">分享图片：</view>
+      <view class="_view data-v-38c47215 page-section">
+        <view class="_view data-v-38c47215 uni-uploader-body">
+          <view class="_view data-v-38c47215 uni-uploader__input-box" wx:if="{{!image}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></view>
+          <image class="_image data-v-38c47215 uni-uploader__img" wx:if="{{image}}" src="{{image}}"></image>
+        </view>
+      </view>
+      <view class="_view data-v-38c47215 btn-area">
+        <button type="primary" open-type="share" class="_button data-v-38c47215">分享</button>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,29 @@
+<import src="page-head$b57f9d48" />
+<template name="file$049108ce">
+  <view class="_view data-v-6524ca15">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-6524ca15 page-body">
+      <view class="_view data-v-6524ca15 page-section">
+        <view class="_view data-v-6524ca15 page-body-info">
+          <block wx:if="{{tempFilePath != ''}}">
+            <image src="{{tempFilePath}}" class="_image data-v-6524ca15 image" mode="aspectFit"></image>
+          </block>
+          <block wx:if="{{tempFilePath === '' && savedFilePath != ''}}">
+            <image src="{{savedFilePath}}" class="_image data-v-6524ca15 image" mode="aspectFit"></image>
+          </block>
+          <block wx:if="{{tempFilePath === '' && savedFilePath === ''}}">
+            <view class="_view data-v-6524ca15 image-plus image-plus-nb" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+              <view class="_view data-v-6524ca15 image-plus-horizontal"></view>
+              <view class="_view data-v-6524ca15 image-plus-vertical"></view>
+            </view>
+            <view class="_view data-v-6524ca15 image-plus-text">请选择文件</view>
+          </block>
+        </view>
+        <view class="_view data-v-6524ca15 btn-area">
+          <button class="_button data-v-6524ca15 btn-savefile" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">保存文件</button>
+          <button bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-6524ca15">删除文件</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

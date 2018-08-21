@@ -1,0 +1,33 @@
+<import src="page-head$b57f9d48" />
+<template name="scroll-view$1d6513e3">
+  <view class="_view data-v-4c38c3e4">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-4c38c3e4 page-body">
+      <view class="_view data-v-4c38c3e4 page-section">
+        <view class="_view data-v-4c38c3e4 page-section-title">
+          <text class="_text data-v-4c38c3e4">Vertical Scroll\n纵向滚动</text>
+        </view>
+        <view class="_view data-v-4c38c3e4 page-section-spacing">
+          <scroll-view scroll-y="true" class="_scroll-view data-v-4c38c3e4 scroll-Y" bindscrolltoupper="handleProxy" bindscrolltolower="handleProxy" bindscroll="handleProxy" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" data-eventid="{{'0'}}"
+            data-comkey="{{$k}}">
+            <view id="demo1" class="_view data-v-4c38c3e4 scroll-view-item color1">A</view>
+            <view id="demo2" class="_view data-v-4c38c3e4 scroll-view-item color2">B</view>
+            <view id="demo3" class="_view data-v-4c38c3e4 scroll-view-item color3">C</view>
+          </scroll-view>
+        </view>
+      </view>
+      <view class="_view data-v-4c38c3e4 page-section">
+        <view class="_view data-v-4c38c3e4 page-section-title">
+          <text class="_text data-v-4c38c3e4">Horizontal Scroll\n横向滚动</text>
+        </view>
+        <view class="_view data-v-4c38c3e4 page-section-spacing">
+          <scroll-view class="_scroll-view data-v-4c38c3e4 scroll-view_H" scroll-x="true" bindscroll="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+            <view id="demo1" class="_view data-v-4c38c3e4 scroll-view-item_H color1">A</view>
+            <view id="demo2" class="_view data-v-4c38c3e4 scroll-view-item_H color2">B</view>
+            <view id="demo3" class="_view data-v-4c38c3e4 scroll-view-item_H color3">C</view>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

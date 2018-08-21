@@ -1,0 +1,17 @@
+<import src="page-head$c4dafa20" />
+<template name="scan-code$99d4bc88">
+  <view class="_view data-v-3ddf1786">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-3ddf1786 page-body">
+      <view class="_view data-v-3ddf1786 page-section-title">扫码结果</view>
+      <view class="_view data-v-3ddf1786 uni-list">
+        <view class="_view data-v-3ddf1786 uni-cell">
+          <view class="_view data-v-3ddf1786 uni-input">{{result}}</view>
+        </view>
+      </view>
+      <view class="_view data-v-3ddf1786 btn-area">
+        <button type="primary" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-3ddf1786">扫一扫</button>
+      </view>
+    </view>
+  </view>
+</template>

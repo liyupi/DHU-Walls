@@ -1,0 +1,1 @@
+<import src="../../../components/number-box$72881776" /><template is="number-box$72881776" data="{{ ...$root['0'], $root }}"/>

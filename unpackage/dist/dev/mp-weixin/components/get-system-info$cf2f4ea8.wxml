@@ -1,0 +1,63 @@
+<import src="page-head$c4dafa20" />
+<template name="get-system-info$cf2f4ea8">
+  <view class="_view data-v-33014126">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-33014126 page-body">
+      <view class="_view data-v-33014126 page-section">
+        <view class="_view data-v-33014126 uni-list">
+          <view class="_view data-v-33014126 uni-list-cell">
+            <view class="_view data-v-33014126 uni-pd">
+              <view class="_view data-v-33014126 uni-label">手机型号</view>
+            </view>
+            <view class="_view data-v-33014126 uni-list-cell-db">
+              <input class="_input data-v-33014126 uni-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.model}}" />
+            </view>
+          </view>
+          <view class="_view data-v-33014126 uni-list-cell">
+            <view class="_view data-v-33014126 uni-pd">
+              <view class="_view data-v-33014126 uni-label">语言</view>
+            </view>
+            <view class="_view data-v-33014126 uni-list-cell-db">
+              <input class="_input data-v-33014126 uni-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.language}}" />
+            </view>
+          </view>
+          <view class="_view data-v-33014126 uni-list-cell">
+            <view class="_view data-v-33014126 uni-pd">
+              <view class="_view data-v-33014126 uni-label">版本</view>
+            </view>
+            <view class="_view data-v-33014126 uni-list-cell-db">
+              <input class="_input data-v-33014126 uni-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.version}}" />
+            </view>
+          </view>
+          <view class="_view data-v-33014126 uni-list-cell">
+            <view class="_view data-v-33014126 uni-pd">
+              <view class="_view data-v-33014126 uni-label">屏幕宽度</view>
+            </view>
+            <view class="_view data-v-33014126 uni-list-cell-db">
+              <input class="_input data-v-33014126 uni-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.windowWidth}}" />
+            </view>
+          </view>
+          <view class="_view data-v-33014126 uni-list-cell">
+            <view class="_view data-v-33014126 uni-pd">
+              <view class="_view data-v-33014126 uni-label">屏幕高度</view>
+            </view>
+            <view class="_view data-v-33014126 uni-list-cell-db">
+              <input class="_input data-v-33014126 uni-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.windowHeight}}" />
+            </view>
+          </view>
+          <view class="_view data-v-33014126 uni-list-cell">
+            <view class="_view data-v-33014126 uni-pd">
+              <view class="_view data-v-33014126 uni-label">DPI</view>
+            </view>
+            <view class="_view data-v-33014126 uni-list-cell-db">
+              <input class="_input data-v-33014126 uni-input" type="text" disabled="{{true}}" placeholder="未获取" value="{{systemInfo.pixelRatio}}" />
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-33014126 btn-area">
+          <button type="primary" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-33014126">获取手机系统信息</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

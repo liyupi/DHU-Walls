@@ -1,0 +1,1 @@
+<import src="../../../components/drag-left$8ac6abc4" /><template is="drag-left$8ac6abc4" data="{{ ...$root['0'], $root }}"/>

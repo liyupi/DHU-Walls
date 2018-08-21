@@ -1,0 +1,1 @@
+<import src="../../../components/toast$28ca4ba4" /><template is="toast$28ca4ba4" data="{{ ...$root['0'], $root }}"/>

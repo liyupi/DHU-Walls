@@ -1,0 +1,5 @@
+<template name="page-head$c4dafa20">
+  <view class="_view data-v-7ee83863 page-head">
+    <view class="_view data-v-7ee83863 page-head-title">{{title}}</view>
+  </view>
+</template>

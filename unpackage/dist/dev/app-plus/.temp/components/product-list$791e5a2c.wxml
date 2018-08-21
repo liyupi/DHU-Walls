@@ -1,0 +1,12 @@
+<import src="page-head$c4dafa20" />
+<import src="product$1b0870fe" />
+<template name="product-list$791e5a2c">
+  <view class="_view data-v-d877ba7a page">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-d877ba7a product-list">
+      <view wx:key="index" key="{{index}}" wx:for="{{productList}}" wx:for-index="index" wx:for-item="product" class="_view data-v-d877ba7a">
+        <template data="{{...$root[$kk+'1-'+index], $root}}" is="product$1b0870fe"></template>
+      </view>
+    </view>
+  </view>
+</template>

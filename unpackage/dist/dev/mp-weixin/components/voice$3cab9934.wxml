@@ -1,0 +1,63 @@
+<import src="page-head$c4dafa20" />
+<template name="voice$3cab9934">
+  <view class="_view data-v-b0c56f32">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-b0c56f32 page-body">
+      <view class="_view data-v-b0c56f32 page-section">
+        <block wx:if="{{recording === false && playing === false && hasRecord === false}}">
+          <view class="_view data-v-b0c56f32 page-body-time">
+            <text class="_text data-v-b0c56f32 time-big">{{formatedRecordTime}}</text>
+          </view>
+          <view class="_view data-v-b0c56f32 page-body-buttons">
+            <view class="_view data-v-b0c56f32 page-body-button"></view>
+            <view class="_view data-v-b0c56f32 page-body-button" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+              <image src="../../../static/record.png" class="_image data-v-b0c56f32"></image>
+            </view>
+            <view class="_view data-v-b0c56f32 page-body-button"></view>
+          </view>
+        </block>
+        <block wx:if="{{recording === true}}">
+          <view class="_view data-v-b0c56f32 page-body-time">
+            <text class="_text data-v-b0c56f32 time-big">{{formatedRecordTime}}</text>
+          </view>
+          <view class="_view data-v-b0c56f32 page-body-buttons">
+            <view class="_view data-v-b0c56f32 page-body-button"></view>
+            <view class="_view data-v-b0c56f32 page-body-button" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+              <view class="_view data-v-b0c56f32 button-stop-record"></view>
+            </view>
+            <view class="_view data-v-b0c56f32 page-body-button"></view>
+          </view>
+        </block>
+        <block wx:if="{{hasRecord === true && playing === false}}">
+          <view class="_view data-v-b0c56f32 page-body-time">
+            <text class="_text data-v-b0c56f32 time-big">{{formatedPlayTime}}</text>
+            <text class="_text data-v-b0c56f32 time-small">{{formatedRecordTime}}</text>
+          </view>
+          <view class="_view data-v-b0c56f32 page-body-buttons">
+            <view class="_view data-v-b0c56f32 page-body-button"></view>
+            <view class="_view data-v-b0c56f32 page-body-button" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+              <image src="../../../static/play.png" class="_image data-v-b0c56f32"></image>
+            </view>
+            <view class="_view data-v-b0c56f32 page-body-button" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+              <image src="../../../static/trash.png" class="_image data-v-b0c56f32"></image>
+            </view>
+          </view>
+        </block>
+        <block wx:if="{{hasRecord === true && playing === true}}">
+          <view class="_view data-v-b0c56f32 page-body-time">
+            <text class="_text data-v-b0c56f32 time-big">{{formatedPlayTime}}</text>
+            <text class="_text data-v-b0c56f32 time-small">{{formatedRecordTime}}</text>
+          </view>
+          <view class="_view data-v-b0c56f32 page-body-buttons">
+            <view class="_view data-v-b0c56f32 page-body-button" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">
+              <image src="../../../static/stop.png" class="_image data-v-b0c56f32"></image>
+            </view>
+            <view class="_view data-v-b0c56f32 page-body-button" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">
+              <image src="../../../static/trash.png" class="_image data-v-b0c56f32"></image>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

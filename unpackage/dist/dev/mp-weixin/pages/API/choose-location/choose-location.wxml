@@ -1,0 +1,1 @@
+<import src="../../../components/choose-location$1d3a9dec" /><template is="choose-location$1d3a9dec" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,1 @@
+<import src="../../../components/action-sheet$030c4f64" /><template is="action-sheet$030c4f64" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,1 @@
+<import src="../../../components/list-with-badges$01964b2c" /><template is="list-with-badges$01964b2c" data="{{ ...$root['0'], $root }}"/>

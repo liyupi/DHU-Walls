@@ -1,0 +1,34 @@
+<import src="page-head$b57f9d48" />
+<template name="video$4873254c">
+  <view class="_view data-v-0e663a4d">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-0e663a4d page-body">
+      <view class="_view data-v-0e663a4d page-section">
+        <view class="_view data-v-0e663a4d uni-list">
+          <view class="_view data-v-0e663a4d uni-list-cell">
+            <view class="_view data-v-0e663a4d uni-list-cell-left">
+              <view class="_view data-v-0e663a4d uni-label">视频来源</view>
+            </view>
+            <view class="_view data-v-0e663a4d uni-list-cell-right">
+              <picker range="{{sourceType}}" bindchange="handleProxy" value="{{sourceTypeIndex}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-0e663a4d">
+                <view class="_view data-v-0e663a4d uni-input">{{sourceType[sourceTypeIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-0e663a4d page-body-info">
+          <block wx:if="{{!src}}">
+            <view class="_view data-v-0e663a4d image-plus image-plus-nb" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+              <view class="_view data-v-0e663a4d image-plus-horizontal"></view>
+              <view class="_view data-v-0e663a4d image-plus-vertical"></view>
+            </view>
+            <view class="_view data-v-0e663a4d image-plus-text">添加视频</view>
+          </block>
+          <block wx:else>
+            <video src="{{src}}" class="_video data-v-0e663a4d video"></video>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

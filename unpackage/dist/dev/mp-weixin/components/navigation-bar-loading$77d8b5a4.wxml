@@ -1,0 +1,12 @@
+<import src="page-head$b57f9d48" />
+<template name="navigation-bar-loading$77d8b5a4">
+  <view class="_view data-v-a7ae6496">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-a7ae6496 page-body">
+      <view class="_view data-v-a7ae6496 btn-area">
+        <button class="_button data-v-a7ae6496 btn-load" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">显示加载动画</button>
+        <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-a7ae6496">隐藏加载动画</button>
+      </view>
+    </view>
+  </view>
+</template>

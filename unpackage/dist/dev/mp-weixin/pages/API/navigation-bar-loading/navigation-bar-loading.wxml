@@ -1,0 +1,1 @@
+<import src="../../../components/navigation-bar-loading$77d8b5a4" /><template is="navigation-bar-loading$77d8b5a4" data="{{ ...$root['0'], $root }}"/>

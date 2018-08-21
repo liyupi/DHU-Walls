@@ -1,0 +1,15 @@
+<import src="page-head$b57f9d48" />
+<template name="text$0351ff9e">
+  <view class="_view data-v-6230d838">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-6230d838 page-body">
+      <view class="_view data-v-6230d838 page-section page-section-spacing">
+        <view class="_view data-v-6230d838 text-box" scroll-y="true">
+          <text class="_text data-v-6230d838">{{text}}</text>
+        </view>
+        <button disabled="{{!canAdd}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-6230d838">add line</button>
+        <button disabled="{{!canRemove}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-6230d838">remove line</button>
+      </view>
+    </view>
+  </view>
+</template>

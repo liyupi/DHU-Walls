@@ -1,0 +1,6 @@
+<import src="page-head$b57f9d48" />
+<template name="navigate$84321fa8">
+  <view class="_view data-v-205973c0">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+  </view>
+</template>

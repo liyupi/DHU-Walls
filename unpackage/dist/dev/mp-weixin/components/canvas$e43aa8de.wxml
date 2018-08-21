@@ -1,0 +1,11 @@
+<import src="page-head$b57f9d48" />
+<template name="canvas$e43aa8de">
+  <view class="_view data-v-0247e0d8">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-0247e0d8 page-body">
+      <view class="_view data-v-0247e0d8 page-body-wrapper">
+        <canvas canvas-id="canvas" class="_canvas data-v-0247e0d8 canvas"></canvas>
+      </view>
+    </view>
+  </view>
+</template>

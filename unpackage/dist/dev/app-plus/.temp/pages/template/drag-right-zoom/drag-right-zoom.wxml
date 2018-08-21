@@ -1,0 +1,1 @@
+<import src="../../../components/drag-right-zoom$2a33bc28" /><template is="drag-right-zoom$2a33bc28" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,33 @@
+<import src="page-head$c4dafa20" />
+<template name="storage$3c2a9378">
+  <view class="_view data-v-525b9f39">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-525b9f39 page-body">
+      <view class="_view data-v-525b9f39 page-section">
+        <view class="_view data-v-525b9f39 uni-list">
+          <view class="_view data-v-525b9f39 uni-list-cell">
+            <view class="_view data-v-525b9f39 uni-list-cell-left">
+              <view class="_view data-v-525b9f39 uni-label">key</view>
+            </view>
+            <view class="_view data-v-525b9f39 uni-list-cell-db">
+              <input class="_input data-v-525b9f39 uni-input" type="text" placeholder="请输入key" name="key" value="{{key}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+            </view>
+          </view>
+          <view class="_view data-v-525b9f39 uni-list-cell">
+            <view class="_view data-v-525b9f39 uni-list-cell-left">
+              <view class="_view data-v-525b9f39 uni-label">value</view>
+            </view>
+            <view class="_view data-v-525b9f39 uni-list-cell-db">
+              <input class="_input data-v-525b9f39 uni-input" type="text" placeholder="请输入value" name="data" value="{{data}}" bindinput="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
+            </view>
+          </view>
+        </view>
+        <view class="_view data-v-525b9f39 btn-area">
+          <button type="primary" class="_button data-v-525b9f39 btn-setstorage" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">存储数据</button>
+          <button bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-525b9f39">读取数据</button>
+          <button bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_button data-v-525b9f39">清理数据</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

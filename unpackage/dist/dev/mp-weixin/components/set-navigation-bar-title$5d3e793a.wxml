@@ -1,0 +1,19 @@
+<import src="page-head$c4dafa20" />
+<template name="set-navigation-bar-title$5d3e793a">
+  <view class="_view data-v-5063e1fe">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <form class="_form data-v-5063e1fe page-body" bindsubmit="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-5063e1fe uni-list">
+        <view class="_view data-v-5063e1fe uni-list-cell">
+          <view class="_view data-v-5063e1fe uni-list-cell-left"> 页面标题 </view>
+          <view class="_view data-v-5063e1fe uni-list-cell-db">
+            <input class="_input data-v-5063e1fe uni-input" type="text" placeholder="请输入页面标题并点击设置即可" name="title" />
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-5063e1fe btn-area">
+        <button type="primary" formType="submit" class="_button data-v-5063e1fe">设置</button>
+      </view>
+    </form>
+  </view>
+</template>

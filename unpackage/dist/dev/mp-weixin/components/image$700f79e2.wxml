@@ -1,0 +1,20 @@
+<import src="page-head$b57f9d48" />
+<template name="image$700f79e2">
+  <view class="_view data-v-4ff28260">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-4ff28260 page-body">
+      <view class="_view data-v-4ff28260 page-section page-section-gap">
+        <view class="_view data-v-4ff28260 page-section-title">Local Image</view>
+        <view class="_view data-v-4ff28260 page-section-ctn">
+          <image class="_image data-v-4ff28260 image" src="../../../static/uni@2x.png"></image>
+        </view>
+      </view>
+      <view class="_view data-v-4ff28260 page-section page-section-gap">
+        <view class="_view data-v-4ff28260 page-section-title">Internet Image</view>
+        <view class="_view data-v-4ff28260 page-section-ctn">
+          <image class="_image data-v-4ff28260 image" src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/uni@2x.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

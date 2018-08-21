@@ -1,0 +1,1 @@
+<import src="../../../components/on-accelerometer-change$6a864464" /><template is="on-accelerometer-change$6a864464" data="{{ ...$root['0'], $root }}"/>

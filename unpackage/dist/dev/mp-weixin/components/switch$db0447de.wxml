@@ -1,0 +1,28 @@
+<import src="page-head$b57f9d48" />
+<template name="switch$db0447de">
+  <view class="_view data-v-06e31158">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$b57f9d48"></template>
+    <view class="_view data-v-06e31158 page-body">
+      <view class="_view data-v-06e31158 page-section page-section-gap">
+        <view class="_view data-v-06e31158 page-section-title">默认样式</view>
+        <view class="_view data-v-06e31158 body-view">
+          <switch checked bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_switch data-v-06e31158" />
+          <switch bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_switch data-v-06e31158" />
+        </view>
+      </view>
+      <view class="_view data-v-06e31158 page-section">
+        <view class="_view data-v-06e31158 page-section-title">推荐展示样式</view>
+        <view class="_view data-v-06e31158 uni-list">
+          <view class="_view data-v-06e31158 uni-list-cell uni-list-cell-pd">
+            <view class="_view data-v-06e31158 uni-list-cell-db">开启中</view>
+            <switch checked class="_switch data-v-06e31158" />
+          </view>
+          <view class="_view data-v-06e31158 uni-list-cell uni-list-cell-pd">
+            <view class="_view data-v-06e31158 uni-list-cell-db">关闭</view>
+            <switch class="_switch data-v-06e31158" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

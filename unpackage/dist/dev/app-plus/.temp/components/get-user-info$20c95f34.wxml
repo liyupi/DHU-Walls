@@ -1,0 +1,25 @@
+<import src="page-head$c4dafa20" />
+<template name="get-user-info$20c95f34">
+  <view class="_view data-v-b3a9a196">
+    <template data="{{...$root[$kk+'0'], $root}}" is="page-head$c4dafa20"></template>
+    <view class="_view data-v-b3a9a196 page-body">
+      <view class="_view data-v-b3a9a196 page-section">
+        <view class="_view data-v-b3a9a196 page-body-info">
+          <view class="_view data-v-b3a9a196 page-body-title">用户信息</view>
+          <block wx:if="{{hasUserInfo === false}}">
+            <text class="_text data-v-b3a9a196 page-body-text">未获取</text>
+            <text class="_text data-v-b3a9a196 page-body-text">点击蓝色按钮可获取用户头像及昵称</text>
+          </block>
+          <block wx:if="{{hasUserInfo === true}}">
+            <image class="_image data-v-b3a9a196 userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+            <text class="_text data-v-b3a9a196 userinfo-nickname">{{userInfo.nickName}}</text>
+          </block>
+        </view>
+        <view class="_view data-v-b3a9a196 btn-area">
+          <button type="primary" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-b3a9a196">获取用户信息</button>
+          <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-b3a9a196">清空</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

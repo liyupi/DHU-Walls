@@ -1,0 +1,35 @@
+<template name="component$8351639c">
+  <view class="_view data-v-3238a966 index">
+    <swiper autoplay="true" indicator-dots="true" circular="true" style="height: 300rpx;" class="_swiper data-v-3238a966">
+      <swiper-item wx:key="key" key="{{key}}" wx:for="{{imgUrls}}" wx:for-index="key" wx:for-item="img" class="_swiper-item data-v-3238a966">
+        <image src="{{img}}" style="height: 300rpx;" class="_image data-v-3238a966"></image>
+      </swiper-item>
+    </swiper>
+    <view class="_view data-v-3238a966 text" hover-class="uni-list-cell-hover"> 第
+      <text class="_text data-v-3238a966 uni-badge uni-badge-danger uni-badge-inverted">{{blockNum}}</text>个砖块已经产生啦~
+      <text style="float:right;" class="_text data-v-3238a966">我要搬砖</text>
+    </view>
+    <view class="_view data-v-3238a966 uni-grid-10">
+      <view class="_view data-v-3238a966 uni-grid-10-item {{index % 5 === 4 ? 'no-border-right' : ''}}" hover-class="uni-grid-10-item-hover" wx:key="index" key="{{index}}" wx:for="{{walls}}" wx:for-index="index" wx:for-item="item">
+        <image class="_image data-v-3238a966 uni-grid-10-image" src="{{item.img}}"></image>
+        <text class="_text data-v-3238a966 uni-grid-10-text">{{item.title}}</text>
+      </view>
+    </view>
+    <view class="_view data-v-3238a966 text" id="message-list-title" hover-class="uni-list-cell-hover"> - 最新涂鸦 - </view>
+    <view class="_view data-v-3238a966 uni-list">
+      <view class="_view data-v-3238a966 uni-list-cell" hover-class="uni-list-cell-hover" wx:key="key" key="{{key}}" wx:for="{{listData}}" wx:for-index="key" wx:for-item="value">
+        <view class="_view data-v-3238a966 uni-media-list">
+          <image class="_image data-v-3238a966 uni-media-list-logo" src="{{value.cover}}"></image>
+          <view class="_view data-v-3238a966 uni-media-list-body">
+            <view class="_view data-v-3238a966 uni-media-list-text-top">{{value.title}}</view>
+            <view class="_view data-v-3238a966 uni-media-list-text-bottom">
+              <text class="_text data-v-3238a966">#1000001 </text>
+              <text class="_text data-v-3238a966">{{value.author_name}} </text>
+              <text class="_text data-v-3238a966">{{value.published_at}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
